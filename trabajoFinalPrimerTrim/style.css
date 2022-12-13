@@ -1,0 +1,210 @@
+header {
+    background-color: greenyellow;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 5px;
+}
+
+:root {
+    --pastel: rgb(210, 250, 210);
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+nav {
+    width: 100vw;
+    background-color: var(--pastel);
+    text-align: center;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegador {
+    text-decoration: none;
+    background-color: rgb(93, 212, 93);
+    border: 1px solid black;
+    border-radius: 5px;
+    border-width: 0px 2px 2px 0px;
+    box-shadow: 2px 2px darkgreen;
+    padding-top: 1vh;
+}
+
+.navegador:active {
+    transform: scale(1.2);
+}
+
+.navegador:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+
+#seleccionado {
+    box-shadow: 2px 2px darkgreen inset;
+}
+
+.navegador#seleccionado {
+    background-color: rgb(157, 201, 157);
+}
+
+#cartel {
+    display: flex;
+    background-color: rgb(181, 215, 130);
+    color: blue;
+    border: 4px solid black;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 15px;
+}
+
+.escudo {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+span {
+    color: black;
+}
+
+#imagenNiños {
+    width: 100vw;
+    height: 50vw;
+}
+
+#tabla {
+    background-color: rgb(242, 255, 127);
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+#tabla:active{
+    background-color: var(--pastel);
+    transition: 0.8s;
+}
+
+
+
+#clasificacion {
+    font-size: xx-large;
+    margin-bottom: 0px;
+    color: darkgreen;
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    width: 100vw;
+    text-align: center;
+    color: rgb(224, 180, 123);
+}
+
+main {
+    background-color: antiquewhite;
+    text-align: center;
+    width: 100vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: x-large;
+}
+
+main:active{
+    transform:scale(1.5);
+    transition: .5s;
+}
+
+h4 {
+    text-align: justify;
+    font-size: x-large;
+    color: rgb(9, 70, 108);
+}
+
+
+.historia::first-line{
+    font-size: x-large;
+    font-style: italic;
+}
+
+.historia::first-letter{
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.historia:last-of-type::after{
+    content: "y ya está";
+}
+
+.historia:nth-child(odd){
+    color: blueviolet;
+}
+
+mark{
+    background-color: var(--pastel);
+}
+
+#escudoHistoria{
+display: flex;
+align-items: center;
+}
+
+#imgNiñoHistoria {
+    display: block;
+    margin: 15px auto 15px auto;
+    width: 50%;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    .escudo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .escudo{
+        width: 40px;
+        height: 40px;
+    }
+    #cartel{
+        font-size: x-small;
+        border: 1px solid black;   
+    }
+}
+
+@media screen and (max-width:358px) {
+    .escudo{
+        width: 20px;
+        height: 20px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    #portaFoto {
+        max-width: 800px;
+        max-height: 1200px;
+    }
+}
